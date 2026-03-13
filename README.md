@@ -1,4 +1,5 @@
 # close-clothes
 data mining project
 
-dataset: https://www.kaggle.com/datasets/ryanbadai/clothes-dataset
+# Requirement
+- Clothes_Dataset folder: download from kaggle.com/datasets/ryanbadai/clothes-dataset
