@@ -15,7 +15,7 @@ INDEX_PATH = os.path.join(os.path.dirname(__file__), "features.npz")
 BATCH_SIZE = 32
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-TRANSFORM = transforms.Compose([
+transform = transforms.Compose([
     transforms.Resize(256),
     transforms.CenterCrop(224),
     transforms.ToTensor(),
@@ -54,7 +54,7 @@ def build_index(model):
             for p in batch_paths:
                 try:
                     img = Image.open(p).convert("RGB")
-                    batch_tensors.append(TRANSFORM(img))
+                    batch_tensors.append(transform(img))
                     valid_paths.append(p)
                 except Exception as e:
                     print(f"  [WARN] skipping {p}: {e}")
@@ -66,6 +66,7 @@ def build_index(model):
             with torch.no_grad():
                 feats = model(tensor_batch).cpu().numpy()  # [B, 4096]
 
+            # L2 normalization
             norms = np.linalg.norm(feats, axis=1, keepdims=True)
             feats = feats / np.clip(norms, 1e-8, None)
 
@@ -98,7 +99,7 @@ def query_index(model, query_path, k):
     labels = data["labels"]
 
     img = Image.open(query_path).convert("RGB")
-    tensor = TRANSFORM(img).unsqueeze(0).to(DEVICE)  # [1, 3, 224, 224]
+    tensor = transform(img).unsqueeze(0).to(DEVICE)  # [1, 3, 224, 224]
     with torch.no_grad():
         feat = model(tensor).cpu().numpy().squeeze()  # [4096]
     feat = feat / np.clip(np.linalg.norm(feat), 1e-8, None)
