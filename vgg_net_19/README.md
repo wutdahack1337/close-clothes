@@ -41,10 +41,10 @@ python vgg_net_19/main.py --build
 Output mẫu:
 ```
 Using device: cuda
-  Done: Blazer (500 images)
-  Done: Celana_Panjang (500 images)
+  Done: Blazer (found 500 images, indexed 500)
+  Done: Celana_Panjang (found 500 images, indexed 500)
   ...
-  Done: Sweter (500 images)
+  Done: Sweter (found 500 images, indexed 500)
 
 Index saved -> vgg_net_19/features.npz
 Total: 7500 images, 4096 dims

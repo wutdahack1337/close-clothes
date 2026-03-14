@@ -22,7 +22,7 @@ def _l2(v):
 
 
 def extract_features(img: Image.Image) -> np.ndarray:
-    img = img.resize((IMG_SIZE, IMG_SIZE), Image.BILINEAR)
+    img = img.resize((IMG_SIZE, IMG_SIZE), Image.Resampling.BILINEAR)
     arr = np.array(img, dtype=np.float32) / 255.0  # [H, W, 3] in [0,1]
 
     # Color Histogram on HSV
@@ -63,8 +63,9 @@ def build_index():
 
         for p in image_paths:
             try:
-                img = Image.open(p).convert("RGB")
-                feat = extract_features(img)
+                with Image.open(p) as img:
+                    img = img.convert("RGB")
+                    feat = extract_features(img)
                 all_features.append(feat)
                 all_paths.append(p)
                 all_labels.append(label)
@@ -106,7 +107,9 @@ def query_index(query_path, k):
         print(f"Requested k={k} is larger than the number of indexed samples ({num_samples}). Clamping k to {num_samples}")
         k = num_samples
 
-    img = Image.open(query_path).convert("RGB")
+    with Image.open(query_path) as img:
+        img = img.convert("RGB")
+        feat = extract_features(img)
     feat = extract_features(img)
 
     nn_model = NearestNeighbors(n_neighbors=k, metric="euclidean", algorithm="brute")

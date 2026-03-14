@@ -37,10 +37,10 @@ python color_histogram_and_hog/main.py --build
 
 Output mẫu:
 ```
-  Done: Blazer (500 images)
-  Done: Celana_Panjang (500 images)
+  Done: Blazer (found 500 images, indexed 500)
+  Done: Celana_Panjang (found 500 images, indexed 500)
   ...
-  Done: Sweter (500 images)
+  Done: Sweter (found 500 images, indexed 500)
 
 Index saved -> color_histogram_and_hog/features.npz
 Total: 7500 images, 8196 dims
