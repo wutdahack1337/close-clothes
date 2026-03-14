@@ -1,6 +1,8 @@
 # close-clothes
 data mining project
 
+You wanna find k similar clothes to a query image.
+
 ```
 python3 -m venv .venv
 

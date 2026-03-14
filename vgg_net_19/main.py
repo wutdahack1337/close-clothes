@@ -45,6 +45,7 @@ def build_index(model):
             continue
         label = os.path.basename(label_dir)
         image_paths = sorted(glob.glob(os.path.join(label_dir, "*.jpg")))
+        indexed_count = 0
 
         for batch_start in range(0, len(image_paths), BATCH_SIZE):
             batch_paths = image_paths[batch_start: batch_start + BATCH_SIZE]
@@ -73,8 +74,12 @@ def build_index(model):
             all_features.append(feats)
             all_paths.extend(valid_paths)
             all_labels.extend([label] * len(valid_paths))
+            indexed_count += len(valid_paths)
 
-        print(f"  Done: {label} ({len(image_paths)} images)")
+        print(f"  Done: {label} (found {len(image_paths)} images, indexed {indexed_count})")
+
+    if not all_features:
+        raise ValueError(f"No features were extracted from any images under {DATASET_ROOT}. ")
 
     features_matrix = np.vstack(all_features)  # [N, 4096]
     np.savez(
@@ -93,10 +98,19 @@ def query_index(model, query_path, k):
             f"Index not found at {INDEX_PATH}. Run --build first."
         )
 
-    data = np.load(INDEX_PATH, allow_pickle=True)
+    data = np.load(INDEX_PATH)
     features = data["features"]  # [N, 4096]
     paths = data["paths"]
     labels = data["labels"]
+
+    num_samples = len(features)
+    if num_samples == 0:
+        raise ValueError("The index is empty. Build the index with at least one image before querying.")
+    if k <= 0:
+        raise ValueError(f"Parameter k must be a positive integer, but got k={k}.")
+    if k > num_samples:
+        print(f"Requested k={k} is larger than the number of indexed samples ({num_samples}). Clamping k to {num_samples}")
+        k = num_samples
 
     img = Image.open(query_path).convert("RGB")
     tensor = transform(img).unsqueeze(0).to(DEVICE)  # [1, 3, 224, 224]
