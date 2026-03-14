@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Close Clothes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-screen-2xl mx-auto px-6 py-4 flex items-center gap-3">
+      <span class="text-2xl font-bold text-gray-800 tracking-tight">Close Clothes</span>
+    </div>
+  </header>
+
+  <main class="max-w-8xl mx-auto px-6 py-8 space-y-8">
+
+    <!-- Upload form -->
+    <div class="bg-white rounded-2xl shadow p-8 max-w-2xl mx-auto">
+      <h2 class="text-lg font-semibold text-gray-700 mb-5">Tải ảnh lên để tìm kiếm</h2>
+      <form id="search-form" method="POST" action="/search" enctype="multipart/form-data" class="space-y-5">
+
+        <!-- Image drop zone -->
+        <label for="image-input"
+               class="block border-2 border-dashed border-gray-300 rounded-xl p-6 cursor-pointer hover:border-indigo-400 transition-colors text-center group">
+          <img id="preview" src="" alt=""
+               class="hidden mx-auto mb-3 max-h-48 rounded-lg object-contain" />
+          <div id="drop-hint" class="text-gray-400 group-hover:text-indigo-400 transition-colors">
+            <svg class="mx-auto mb-2 w-10 h-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+            </svg>
+            <p class="text-sm font-medium">Nhấn để chọn ảnh</p>
+            <p class="text-xs mt-1">JPG, JPEG, PNG</p>
+          </div>
+          <input id="image-input" type="file" name="image" accept=".jpg,.jpeg,.png"
+                 class="hidden" required />
+        </label>
+
+        <!-- k input -->
+        <div class="flex items-center gap-4">
+          <label for="k-input" class="text-sm font-medium text-gray-600 whitespace-nowrap">Số kết quả (k)</label>
+          <input id="k-input" type="number" name="k" min="1" max="7500"
+                 value="{{ k if k is defined else 3 }}"
+                 class="w-24 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+        </div>
+
+        <!-- Error -->
+        {% if error %}
+        <p class="text-sm text-red-500">{{ error }}</p>
+        {% endif %}
+
+        <!-- Submit -->
+        <button id="submit-btn" type="submit"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 rounded-xl transition-colors flex items-center justify-center gap-2">
+          <svg id="btn-icon" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" />
+          </svg>
+          <svg id="btn-spinner" class="hidden w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"/>
+          </svg>
+          <span id="btn-label">Tìm kiếm</span>
+        </button>
+      </form>
+    </div>
+
+    {% if uploaded_filename %}
+    <!-- Query image -->
+    <div class="flex flex-col items-center gap-2">
+      <p class="text-sm font-medium text-gray-500">Ảnh bạn tải lên</p>
+      <img src="/static/uploads/{{ uploaded_filename }}"
+           class="max-h-64 rounded-xl shadow object-contain border border-gray-200" alt="Query image" />
+    </div>
+
+    <!-- Results -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- VGG19 column -->
+      <div class="bg-white rounded-2xl shadow p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-gray-800">VGG19</h2>
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">
+            {{ vgg_time_ms }} ms
+          </span>
+        </div>
+        <div class="grid grid-cols-{{ [vgg_results|length, 4]|min }} gap-3">
+          {% for item in vgg_results %}
+          <div class="relative group">
+            <div class="overflow-hidden rounded-lg bg-gray-100">
+              <img src="/dataset-image?path={{ item.path | urlencode }}"
+                   class="w-full object-contain group-hover:scale-105 transition-transform duration-200"
+                   alt="{{ item.label }}"
+                   loading="lazy" />
+            </div>
+            <span class="absolute top-1.5 left-1.5 bg-black/60 text-white text-xs font-bold px-1.5 py-0.5 rounded">
+              #{{ item.rank }}
+            </span>
+            <div class="mt-1.5 px-0.5">
+              <p class="text-xs font-medium text-gray-700 truncate">{{ item.label }}</p>
+              <p class="text-xs text-gray-400">d = {{ "%.4f" | format(item.dist) }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Color Histogram + HOG column -->
+      <div class="bg-white rounded-2xl shadow p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-gray-800">Color Histogram + HOG</h2>
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">
+            {{ chog_time_ms }} ms
+          </span>
+        </div>
+        <div class="grid grid-cols-{{ [chog_results|length, 4]|min }} gap-3">
+          {% for item in chog_results %}
+          <div class="relative group">
+            <div class="overflow-hidden rounded-lg bg-gray-100">
+              <img src="/dataset-image?path={{ item.path | urlencode }}"
+                   class="w-full object-contain group-hover:scale-105 transition-transform duration-200"
+                   alt="{{ item.label }}"
+                   loading="lazy" />
+            </div>
+            <span class="absolute top-1.5 left-1.5 bg-black/60 text-white text-xs font-bold px-1.5 py-0.5 rounded">
+              #{{ item.rank }}
+            </span>
+            <div class="mt-1.5 px-0.5">
+              <p class="text-xs font-medium text-gray-700 truncate">{{ item.label }}</p>
+              <p class="text-xs text-gray-400">d = {{ "%.4f" | format(item.dist) }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+    {% endif %}
+
+  </main>
+
+  <script>
+    // Image preview
+    const input = document.getElementById("image-input");
+    const preview = document.getElementById("preview");
+    const hint = document.getElementById("drop-hint");
+
+    input.addEventListener("change", () => {
+      const file = input.files[0];
+      if (!file) return;
+      preview.src = URL.createObjectURL(file);
+      preview.classList.remove("hidden");
+      hint.classList.add("hidden");
+    });
+
+    // Loading state on submit
+    const form = document.getElementById("search-form");
+    const btn = document.getElementById("submit-btn");
+    const btnIcon = document.getElementById("btn-icon");
+    const btnSpinner = document.getElementById("btn-spinner");
+    const btnLabel = document.getElementById("btn-label");
+
+    form.addEventListener("submit", () => {
+      btn.disabled = true;
+      btn.classList.add("opacity-70", "cursor-not-allowed");
+      btnIcon.classList.add("hidden");
+      btnSpinner.classList.remove("hidden");
+      btnLabel.textContent = "Đang tìm kiếm...";
+    });
+  </script>
+
+</body>
+</html>
