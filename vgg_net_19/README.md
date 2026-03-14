@@ -18,7 +18,7 @@ Tìm K ảnh giống nhất với một ảnh đầu vào, sử dụng VGG19 đ�
 ```
 Linear(25088, 4096) → ReLU → Dropout
 Linear(4096,  4096) → ReLU → Dropout   ← output tại đây (4096-dim)
-[Linear(4096, 1000)]                    ← bỏ lớp này
+[Linear(4096, 1000)]                   ← bỏ lớp này
 ```
 
 ## Files
@@ -30,7 +30,7 @@ Linear(4096,  4096) → ReLU → Dropout   ← output tại đây (4096-dim)
 
 ## Sử dụng
 
-### Build index (chạy 1 lần)
+### Build index
 
 Trích xuất đặc trưng toàn bộ dataset và lưu vào `features.npz`:
 
@@ -41,10 +41,10 @@ python vgg_net_19/main.py --build
 Output mẫu:
 ```
 Using device: cuda
-  Done: Blazer (500 images)
-  Done: Celana_Panjang (500 images)
+  Done: Blazer (found 500 images, indexed 500)
+  Done: Celana_Panjang (found 500 images, indexed 500)
   ...
-  Done: Sweter (500 images)
+  Done: Sweter (found 500 images, indexed 500)
 
 Index saved -> vgg_net_19/features.npz
 Total: 7500 images, 4096 dims
@@ -73,7 +73,7 @@ Top-5 results for: clothes_dataset/Kaos/abc.jpg
   [5] dist=0.1391  label=Kaos  path=clothes_dataset/Kaos/jkl.jpg
 ```
 
-### Tham số CLI
+### CLI
 
 | Tham số | Mô tả | Mặc định |
 |---------|-------|----------|
