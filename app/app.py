@@ -7,7 +7,7 @@ import uuid
 import numpy as np
 import torch
 from flask import Flask, abort, render_template, request, send_file
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 from sklearn.neighbors import NearestNeighbors
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -82,7 +82,12 @@ def _query_chog(img: Image.Image, k: int):
     feat = chog_mod.extract_features(img)
     distances, indices = nn_chog.kneighbors(feat.reshape(1, -1), n_neighbors=k)
     return [
-        {"rank": r + 1, "dist": float(distances[0][r]), "label": labels_chog[i], "path": paths_chog[i]}
+        {
+            "rank": r + 1,
+            "dist": float(distances[0][r]),
+            "label": labels_chog[i],
+            "path": os.path.relpath(paths_chog[i], CLOTHES_DATASET_ROOT),
+        }
         for r, i in enumerate(indices[0])
     ]
 
@@ -116,7 +121,12 @@ def search():
     save_path = os.path.join(UPLOAD_FOLDER, filename)
     file.save(save_path)
 
-    img = Image.open(save_path).convert("RGB")
+    try:
+        img = Image.open(save_path).convert("RGB")
+    except (UnidentifiedImageError, OSError):
+        if os.path.exists(save_path):
+            os.remove(save_path)
+        return render_template("index.html", error="Tệp đã tải lên không phải là ảnh hợp lệ.")
 
     # VGG19 query
     t0 = time.perf_counter()
@@ -141,10 +151,12 @@ def search():
 
 @app.get("/dataset-image")
 def dataset_image():
-    raw_path = request.args.get("path", "")
-    if not raw_path:
+    rel_path = request.args.get("path", "")
+    if not rel_path:
         abort(400)
-    real = os.path.realpath(raw_path)
+
+    candidate = os.path.join(CLOTHES_DATASET_ROOT, rel_path)
+    real = os.path.realpath(candidate)
     if not real.startswith(CLOTHES_DATASET_ROOT + os.sep):
         abort(403)
     if not real.lower().endswith(".jpg"):
