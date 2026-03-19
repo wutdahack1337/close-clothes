@@ -1,0 +1,102 @@
+# Files to delete - cross-label duplicates
+# Keep label is indicated by comment on each group
+
+# --- Jaket/075 vs Kemeja/131 → Jaket ---
+Kemeja/131.jpg
+
+# --- Jaket/078 vs Kemeja/132 vs Polo/251 → Jaket ---
+Kemeja/132.jpg
+Polo/251.jpg
+
+# --- Jaket/079 vs Kemeja/133 vs Polo/252 → Jaket ---
+Kemeja/133.jpg
+Polo/252.jpg
+
+# --- Jaket/111 vs Polo/253 → Jaket (hoodie sports jacket) ---
+Polo/253.jpg
+
+# --- Jaket/143 vs Jaket_Olahraga/207 → Jaket_Olahraga (Puma kids) ---
+Jaket/143.jpg
+
+# --- Jaket/144 vs Jaket_Olahraga/340 → Jaket_Olahraga (New Balance) ---
+Jaket/144.jpg
+
+# --- Jaket/145 vs Jaket_Olahraga/353 → Jaket (plain lightweight jacket) ---
+Jaket_Olahraga/353.jpg
+
+# --- Jaket/146 vs Jaket_Olahraga/377 → Jaket_Olahraga (Puma Football) ---
+Jaket/146.jpg
+
+# --- Jaket/151 vs Polo/254 → Jaket (red puffer jacket) ---
+Polo/254.jpg
+
+# --- Jaket/202 vs Kemeja/135 vs Polo/256 → Jaket (sherpa/fluffy jacket) ---
+Kemeja/135.jpg
+Polo/256.jpg
+
+# --- Jaket/296 vs Polo/257 → Jaket (running hoodie jacket) ---
+Polo/257.jpg
+
+# --- Jaket_Olahraga/473 vs Mantel/497 → Jaket_Olahraga (Spalding hooded) ---
+Mantel/497.jpg
+
+# --- Kemeja/064 vs Polo/220 → Polo (Lacoste Sport polo shirt) ---
+Kemeja/064.jpg
+
+# --- Kemeja/065 vs Polo/221 → keep Kemeja (sweatshirt, not polo) ---
+Polo/221.jpg
+
+# --- Kemeja/134 vs Polo/255 → both wrong (it's a Jaket), delete both ---
+Kemeja/134.jpg
+Polo/255.jpg
+
+# --- Kemeja vs Polo pairs (all are button-up shirts = Kemeja) → delete Polo copies ---
+Polo/260.jpg
+Polo/261.jpg
+Polo/262.jpg
+Polo/263.jpg
+Polo/264.jpg
+Polo/265.jpg
+Polo/266.jpg
+Polo/267.jpg
+Polo/268.jpg
+Polo/269.jpg
+Polo/270.jpg
+Polo/271.jpg
+Polo/272.jpg
+Polo/273.jpg
+Polo/274.jpg
+Polo/275.jpg
+Polo/276.jpg
+Polo/277.jpg
+Polo/278.jpg
+Polo/279.jpg
+Polo/280.jpg
+Polo/281.jpg
+Polo/282.jpg
+Polo/283.jpg
+Polo/284.jpg
+Polo/285.jpg
+Polo/286.jpg
+Polo/287.jpg
+Polo/288.jpg
+Polo/387.jpg
+Polo/389.jpg
+Polo/391.jpg
+Polo/392.jpg
+Polo/393.jpg
+Polo/394.jpg
+Polo/396.jpg
+Polo/397.jpg
+Polo/398.jpg
+Polo/399.jpg
+Polo/400.jpg
+Polo/401.jpg
+Polo/402.jpg
+
+# --- PERCEPTUAL-ONLY groups: FALSE POSITIVES (dHash collision, different garments) ---
+# Blazer/263 vs Celana_Panjang/427 vs Rok/074 → all correct → NO DELETE
+# Blazer/416 vs Rok/355 → all correct → NO DELETE
+# Kaos/019,357,481 vs Sweter/026,320 → same pink background → NO DELETE
+# Kaos/022,207 vs Sweter/086 → same pink background → NO DELETE
+# Kaos/441 vs Rok/003 → same pink background → NO DELETE

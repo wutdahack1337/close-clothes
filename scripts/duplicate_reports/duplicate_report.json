@@ -1,0 +1,1337 @@
+{
+  "dataset_root": "/mnt/second_disk/Code/close-clothes/clothes_dataset",
+  "exact_cross_label_group_count": 57,
+  "perceptual_cross_label_group_count": 62,
+  "exact_cross_label_groups": [
+    {
+      "sha256": "79c08591660baff5249f21bc4d921c7fddb590d3d39a0a96d1eee26008ee0a9c",
+      "labels": [
+        "Jaket",
+        "Kemeja"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/075.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/131.jpg"
+      ]
+    },
+    {
+      "sha256": "aba5ad2c3ccd0beaad6a643320450dfde657ea0d14f1b81fbebc81e70e3b2b7f",
+      "labels": [
+        "Jaket",
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/078.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/132.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/251.jpg"
+      ]
+    },
+    {
+      "sha256": "90a17cc815a2d054fe3a0080dfbcf88b0fa28f6bb6a959b4c781bfde3064da96",
+      "labels": [
+        "Jaket",
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/079.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/133.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/252.jpg"
+      ]
+    },
+    {
+      "sha256": "ab33640b3c861688f3bbf01830e9d0ed00757bf3d3803fd422087cf1e0cb4ae4",
+      "labels": [
+        "Jaket",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/111.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/253.jpg"
+      ]
+    },
+    {
+      "sha256": "9dc5c1f56e4408f16c1a70d6789c49d31a50b5bf2e8049bce53eb72a44699f0a",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/143.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/207.jpg"
+      ]
+    },
+    {
+      "sha256": "3f3b26e36839873aa80f61cb77afd39d94d002deb873174d4d1a37cd6d307488",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/144.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/340.jpg"
+      ]
+    },
+    {
+      "sha256": "75f04e77b6fa231b3169964699cfdad60e0880a4ab4a619c034ef85de4524390",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/145.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/353.jpg"
+      ]
+    },
+    {
+      "sha256": "9caf58671aef1388d7dd341ec17d5f43b1f6b91f5f7d0d81c08576e535c8f9dd",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/146.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/377.jpg"
+      ]
+    },
+    {
+      "sha256": "22c3e9f5b1ab8d313f202fe8b67544598dd1756e3a80952510d9ce0ccc64503a",
+      "labels": [
+        "Jaket",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/151.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/254.jpg"
+      ]
+    },
+    {
+      "sha256": "e0c2892cdfe6dd155f635bc27f78842cf347f4aba4d9ca32afa74e9e24934dab",
+      "labels": [
+        "Jaket",
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/202.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/135.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/256.jpg"
+      ]
+    },
+    {
+      "sha256": "cc1b972e66f7dd85aa9163f96e87798513992bbe28a77323dd508f4ca7cca949",
+      "labels": [
+        "Jaket",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/296.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/257.jpg"
+      ]
+    },
+    {
+      "sha256": "16da7a6403723ec0fd2db8adeddcf39fc1961591294a98988af90889ce349d45",
+      "labels": [
+        "Jaket_Olahraga",
+        "Mantel"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/473.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Mantel/497.jpg"
+      ]
+    },
+    {
+      "sha256": "f04f9ff51355ec1c9d72684f5ffcf160cac42cc1230d9ab402ed8c40df414359",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/064.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/220.jpg"
+      ]
+    },
+    {
+      "sha256": "160e8b534981014626ecf039145f09b1403ccb259e0e476bf45b5fd7eb2970af",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/065.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/221.jpg"
+      ]
+    },
+    {
+      "sha256": "b7da011392fbc4701801299b2f1b064299e8cd3fcae03a3a84438fc1cbfd48d5",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/134.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/255.jpg"
+      ]
+    },
+    {
+      "sha256": "433943ba73c1c6db6efaeb5b57018447ed8e311a4d07d66bd7a0d5fd51b8441e",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/170.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/260.jpg"
+      ]
+    },
+    {
+      "sha256": "a37480330946ac620560fad6436e9335186fd3767ca9a87900c557c7d8f7c7ca",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/173.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/261.jpg"
+      ]
+    },
+    {
+      "sha256": "64be57c35a2e2dac9dd3e17e875a663dfcff47606904f66ea65286f2b46cf077",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/176.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/262.jpg"
+      ]
+    },
+    {
+      "sha256": "33f111dfa9444265c8f039971b34fdf64876534f2a87f72d6ce6ac42fc2a10bf",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/177.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/263.jpg"
+      ]
+    },
+    {
+      "sha256": "046a17cf0671ad0f7512e443034c31a1e04943c6791562b7bda893b9271f062b",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/179.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/264.jpg"
+      ]
+    },
+    {
+      "sha256": "e1c4e37586525931da0cb5d1f850ffa59c42b2e4f734000833a951904fd723e1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/180.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/265.jpg"
+      ]
+    },
+    {
+      "sha256": "577969072857a32c6ae9f6af7048fe049208c2edbefa2d6ffe2d6cb622f52545",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/181.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/266.jpg"
+      ]
+    },
+    {
+      "sha256": "03b89fd4ef00649034ce0f01133803190a2fb80522a0ea8a5b7fba2e5d0bd9a4",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/182.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/267.jpg"
+      ]
+    },
+    {
+      "sha256": "759f66b790aa6ca906911727e152fc82029d0d2d5b48807870c33da876796453",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/183.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/268.jpg"
+      ]
+    },
+    {
+      "sha256": "265d4866509be200e12c82488db0684691d0d47ba011393179d644cc2fe4a34a",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/184.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/269.jpg"
+      ]
+    },
+    {
+      "sha256": "fe405a0198532abd71adb74e1adbc01b5b8acbf72801bd8ae4793b8c87361b5c",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/185.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/270.jpg"
+      ]
+    },
+    {
+      "sha256": "d8ce9032e52954acf70097a4d3113f4d11a95a4ea8243f8bc03414678f40c1f5",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/186.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/271.jpg"
+      ]
+    },
+    {
+      "sha256": "5dbb55565769ffbbae5492c69900cc2b890714dab949a830d968f5d8408083fa",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/187.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/272.jpg"
+      ]
+    },
+    {
+      "sha256": "ec29d330cc217ad929a023cfc466bdbcd8cb502e2530c25494b55d2ea7c2e570",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/188.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/273.jpg"
+      ]
+    },
+    {
+      "sha256": "c65d1ab0e32e67a3c50fbd177dbdb97d41f1435e52ceef9ecdcb915be918cd11",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/189.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/274.jpg"
+      ]
+    },
+    {
+      "sha256": "f55d8a8ac049b9f362fcea5029f52461ca0579f7756cd4df826ecf3e4433232f",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/190.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/275.jpg"
+      ]
+    },
+    {
+      "sha256": "9a98cf90e7f2d0355dac43f704c1eb987956b6dbb9fa886e8acfa426a0391d13",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/191.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/276.jpg"
+      ]
+    },
+    {
+      "sha256": "87b6d505d0feef102534d96aff5db5e0b5bd8ae8559abda9f44b5382fbd0b4d8",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/192.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/277.jpg"
+      ]
+    },
+    {
+      "sha256": "7bd2a57ff172400ea067a4c40dbac3324de12925005cfc68230cc03a2c2fb7a4",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/197.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/278.jpg"
+      ]
+    },
+    {
+      "sha256": "a0934d367e5b0ea74e87e8f7cf2c066abc75802de30681d70bd6ca1ff8cfdc9c",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/198.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/279.jpg"
+      ]
+    },
+    {
+      "sha256": "86a181d4ec9ecb861a8a4d209239e4e7a8080c851c89d98f05189a5ffde91a30",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/199.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/280.jpg"
+      ]
+    },
+    {
+      "sha256": "9c6c8538effa8add1d1979bb0a3d67fb8e0f302337a50e3b85aa0ed59a558e4f",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/205.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/281.jpg"
+      ]
+    },
+    {
+      "sha256": "702a75dcf98550ced575d30dafbf9f73c58167fdea8cfd6eed67f4292e031a42",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/206.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/282.jpg"
+      ]
+    },
+    {
+      "sha256": "d63076855eed872c24c930e79045abd033e8bf11467cc971060b0b8ac8bde62e",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/208.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/283.jpg"
+      ]
+    },
+    {
+      "sha256": "9768f658b14364f967a73de96cf9bd2d4c0639dce2ef2f91dfa47817dc2cb530",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/210.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/284.jpg"
+      ]
+    },
+    {
+      "sha256": "a124cce24d4f1470d019c2c0683f08807dbbe0ccd518584b25970433246fc11f",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/211.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/285.jpg"
+      ]
+    },
+    {
+      "sha256": "c457ee7882e88413717a9f40e59216b3183b0524fba1179d31fb2ba61ce3c639",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/214.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/286.jpg"
+      ]
+    },
+    {
+      "sha256": "c60bfd7e51bd4cf83c671b8fcd658686b84b90d292f750a3ae0839f02338570e",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/216.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/287.jpg"
+      ]
+    },
+    {
+      "sha256": "38be950781a88baa98ce07ec62af938d23866cbac0ba2656294c03226bcffaf4",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/217.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/288.jpg"
+      ]
+    },
+    {
+      "sha256": "6e7ef6360f973809e00a5c1de6bc625ed10e6d6b9225d4c62c1ad7e1c145df45",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/232.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/387.jpg"
+      ]
+    },
+    {
+      "sha256": "788c23e9b247a6ac41900294aa59c8b41b4e37e6c1e820cd4a30d99b5a08f6f1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/242.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/389.jpg"
+      ]
+    },
+    {
+      "sha256": "b2264f440197f39b8c8e4001583e5a5ef01d12a4d795c6f4004f3b85136fb5b6",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/260.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/391.jpg"
+      ]
+    },
+    {
+      "sha256": "30f35795a6a83dcf5f999e97f238168d76f6370087dca8ffc2b87e0871f3d277",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/265.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/392.jpg"
+      ]
+    },
+    {
+      "sha256": "7b5d8bb0374862ffa252202bae3994d197429d5cbcbb1ec4bbfdacd4e2859be1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/268.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/393.jpg"
+      ]
+    },
+    {
+      "sha256": "553c420ea05d4d4f2975a67410a341659b6986af9c1ceca4fcfc3b431f8c852c",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/276.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/394.jpg"
+      ]
+    },
+    {
+      "sha256": "ac1b56cdda93077ae879d397e4b2b1ed0591dea31afe9f7ed29c93a3df42d26f",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/412.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/396.jpg"
+      ]
+    },
+    {
+      "sha256": "58857c2a62b943c61a89a41d1a1697bd9a69813c02b759d372208c1159267d85",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/413.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/397.jpg"
+      ]
+    },
+    {
+      "sha256": "4d605d5072c353b14785497695c49f2dfe5f07c7427dab305e8b822cf91f165f",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/414.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/398.jpg"
+      ]
+    },
+    {
+      "sha256": "a41d5ec6753665b315e13939d3091fe47b5cf9815e199d0044e1393b1d1278f3",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/438.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/399.jpg"
+      ]
+    },
+    {
+      "sha256": "7799d956172a94a54de0a1782cf92e6f0d2be086a46abd7b120376c79844526d",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/462.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/400.jpg"
+      ]
+    },
+    {
+      "sha256": "d6434a7f6ceff7747fb914feadc54881ebeb810067edd107dc73425a44a843eb",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/480.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/401.jpg"
+      ]
+    },
+    {
+      "sha256": "1def11d77656bbbe68fa1399733e30501e868ac1b271dd5b1d43e0a79b255548",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/490.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/402.jpg"
+      ]
+    }
+  ],
+  "perceptual_cross_label_groups": [
+    {
+      "dhash": "f0f0f0f0f0f0f0f0",
+      "labels": [
+        "Blazer",
+        "Celana_Panjang",
+        "Rok"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Blazer/263.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Celana_Panjang/427.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Rok/074.jpg"
+      ]
+    },
+    {
+      "dhash": "f0f0f0e0e0f0f0e0",
+      "labels": [
+        "Blazer",
+        "Rok"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Blazer/416.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Rok/355.jpg"
+      ]
+    },
+    {
+      "dhash": "ccd07363e3e1c8ca",
+      "labels": [
+        "Jaket",
+        "Kemeja"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/075.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/131.jpg"
+      ]
+    },
+    {
+      "dhash": "71f0b0327858688c",
+      "labels": [
+        "Jaket",
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/078.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/132.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/251.jpg"
+      ]
+    },
+    {
+      "dhash": "68e8d4d4f0f0f8cc",
+      "labels": [
+        "Jaket",
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/079.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/133.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/252.jpg"
+      ]
+    },
+    {
+      "dhash": "3030e88496d4d82c",
+      "labels": [
+        "Jaket",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/111.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/253.jpg"
+      ]
+    },
+    {
+      "dhash": "93b3f3f0f0f0e869",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/143.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/207.jpg"
+      ]
+    },
+    {
+      "dhash": "193371e8ccea723d",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/144.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/340.jpg"
+      ]
+    },
+    {
+      "dhash": "041030d8c8c8cc00",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/145.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/353.jpg"
+      ]
+    },
+    {
+      "dhash": "97b3f0e4c0e0e8e8",
+      "labels": [
+        "Jaket",
+        "Jaket_Olahraga"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/146.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/377.jpg"
+      ]
+    },
+    {
+      "dhash": "21e0e01614149496",
+      "labels": [
+        "Jaket",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/151.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/254.jpg"
+      ]
+    },
+    {
+      "dhash": "e3f0786e2fe73f87",
+      "labels": [
+        "Jaket",
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/202.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/135.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/256.jpg"
+      ]
+    },
+    {
+      "dhash": "717171e8ccc4c286",
+      "labels": [
+        "Jaket",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket/296.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/257.jpg"
+      ]
+    },
+    {
+      "dhash": "004c2c3717575300",
+      "labels": [
+        "Jaket_Olahraga",
+        "Mantel"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Jaket_Olahraga/473.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Mantel/497.jpg"
+      ]
+    },
+    {
+      "dhash": "0707070707070707",
+      "labels": [
+        "Kaos",
+        "Sweter"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kaos/019.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kaos/357.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kaos/481.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Sweter/026.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Sweter/320.jpg"
+      ]
+    },
+    {
+      "dhash": "0f07070707070707",
+      "labels": [
+        "Kaos",
+        "Sweter"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kaos/022.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kaos/207.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Sweter/086.jpg"
+      ]
+    },
+    {
+      "dhash": "0707070707070f07",
+      "labels": [
+        "Kaos",
+        "Rok"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kaos/441.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Rok/003.jpg"
+      ]
+    },
+    {
+      "dhash": "110f0f1f1f686885",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/064.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/220.jpg"
+      ]
+    },
+    {
+      "dhash": "c0f0b0300044de19",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/065.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/221.jpg"
+      ]
+    },
+    {
+      "dhash": "f0f0a0a8aaba8c8c",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/134.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/255.jpg"
+      ]
+    },
+    {
+      "dhash": "31706cece8e8f1f1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/170.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/260.jpg"
+      ]
+    },
+    {
+      "dhash": "33337160e0f07071",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/173.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/261.jpg"
+      ]
+    },
+    {
+      "dhash": "317044e4e4e4e0d0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/176.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/262.jpg"
+      ]
+    },
+    {
+      "dhash": "13704cccccc8c9e1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/177.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/263.jpg"
+      ]
+    },
+    {
+      "dhash": "7170e8e8e4e0e8f0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/179.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/264.jpg"
+      ]
+    },
+    {
+      "dhash": "3370f0c8c8c8ccc0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/180.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/265.jpg"
+      ]
+    },
+    {
+      "dhash": "3370cce8c8c9c961",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/181.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/266.jpg"
+      ]
+    },
+    {
+      "dhash": "3370ece8e8e8e061",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/182.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/267.jpg"
+      ]
+    },
+    {
+      "dhash": "33716464e480c4c0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/183.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/268.jpg"
+      ]
+    },
+    {
+      "dhash": "131345c4d494c961",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/184.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/269.jpg"
+      ]
+    },
+    {
+      "dhash": "13534d6d8486c4c9",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/185.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/270.jpg"
+      ]
+    },
+    {
+      "dhash": "333325a69796c4e0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/186.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/271.jpg"
+      ]
+    },
+    {
+      "dhash": "31f0cce8e8c848e1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/187.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/272.jpg"
+      ]
+    },
+    {
+      "dhash": "1313170f8f8e8cc9",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/188.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/273.jpg"
+      ]
+    },
+    {
+      "dhash": "3371544ccc8cc8c1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/189.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/274.jpg"
+      ]
+    },
+    {
+      "dhash": "3315c4d49494c1d1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/190.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/275.jpg"
+      ]
+    },
+    {
+      "dhash": "3370d4ccc4c0c0c0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/191.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/276.jpg"
+      ]
+    },
+    {
+      "dhash": "1312161e9e8f8dcc",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/192.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/277.jpg"
+      ]
+    },
+    {
+      "dhash": "17337169c98d81c1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/197.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/278.jpg"
+      ]
+    },
+    {
+      "dhash": "33316d6dccccc060",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/198.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/279.jpg"
+      ]
+    },
+    {
+      "dhash": "317050c8cce8e9f0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/199.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/280.jpg"
+      ]
+    },
+    {
+      "dhash": "3170f0f8f8e8e8f0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/205.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/281.jpg"
+      ]
+    },
+    {
+      "dhash": "3370ece8e8e9f171",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/206.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/282.jpg"
+      ]
+    },
+    {
+      "dhash": "717068e8e8e8f8f0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/208.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/283.jpg"
+      ]
+    },
+    {
+      "dhash": "3370504cccc8c8c0",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/210.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/284.jpg"
+      ]
+    },
+    {
+      "dhash": "131308cdcc88cde1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/211.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/285.jpg"
+      ]
+    },
+    {
+      "dhash": "07236361e1e1f171",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/214.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/286.jpg"
+      ]
+    },
+    {
+      "dhash": "33707070f0f0e0c1",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/216.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/287.jpg"
+      ]
+    },
+    {
+      "dhash": "33337168c9c0e071",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/217.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/288.jpg"
+      ]
+    },
+    {
+      "dhash": "b0f0d6d62c9c7871",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/232.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/387.jpg"
+      ]
+    },
+    {
+      "dhash": "c8d88cc4c4ccccc4",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/242.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/389.jpg"
+      ]
+    },
+    {
+      "dhash": "77f1f0dcf8f071ff",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/260.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/391.jpg"
+      ]
+    },
+    {
+      "dhash": "350db9b1b1ad8d9d",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/265.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/392.jpg"
+      ]
+    },
+    {
+      "dhash": "14cccc8e2aeaabaa",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/268.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/393.jpg"
+      ]
+    },
+    {
+      "dhash": "49e8d2b2b6b634d6",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/276.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/394.jpg"
+      ]
+    },
+    {
+      "dhash": "c3d06479333333b3",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/412.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/396.jpg"
+      ]
+    },
+    {
+      "dhash": "f5b8b23d23232323",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/413.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/397.jpg"
+      ]
+    },
+    {
+      "dhash": "154db1d272666666",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/414.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/398.jpg"
+      ]
+    },
+    {
+      "dhash": "3b31391b13131713",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/438.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/399.jpg"
+      ]
+    },
+    {
+      "dhash": "31f0f0ccccf8f071",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/462.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/400.jpg"
+      ]
+    },
+    {
+      "dhash": "78e8f3f3e9ab3233",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/480.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/401.jpg"
+      ]
+    },
+    {
+      "dhash": "8fa3e0c0c8d8fc9e",
+      "labels": [
+        "Kemeja",
+        "Polo"
+      ],
+      "items": [
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Kemeja/490.jpg",
+        "/mnt/second_disk/Code/close-clothes/clothes_dataset/Polo/402.jpg"
+      ]
+    }
+  ],
+  "skipped_files": []
+}

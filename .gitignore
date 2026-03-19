@@ -1,5 +1,6 @@
-clothes_dataset
+clothes_dataset*
 uploads
+*.npz
 
 
 # Byte-compiled / optimized / DLL files
