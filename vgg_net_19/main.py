@@ -56,7 +56,7 @@ def build_index(model):
                 try:
                     img = Image.open(p).convert("RGB")
                     batch_tensors.append(transform(img))
-                    valid_paths.append(p)
+                    valid_paths.append(os.path.relpath(p, DATASET_ROOT))
                 except Exception as e:
                     print(f"  [WARN] skipping {p}: {e}")
 
@@ -124,7 +124,8 @@ def query_index(model, query_path, k):
 
     print(f"\nTop-{k} results for: {query_path}\n")
     for rank, (dist, idx) in enumerate(zip(distances[0], indices[0]), start=1):
-        print(f"  [{rank}] dist={dist:.4f}  label={labels[idx]}  path={paths[idx]}")
+        rel_path = paths[idx] if isinstance(paths[idx], str) else paths[idx].decode('utf-8')
+        print(f"  [{rank}] dist={dist:.4f}  label={labels[idx]}  path={rel_path}")
 
 
 def main():
