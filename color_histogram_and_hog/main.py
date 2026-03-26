@@ -67,7 +67,7 @@ def build_index():
                     img = img.convert("RGB")
                     feat = extract_features(img)
                 all_features.append(feat)
-                all_paths.append(p)
+                all_paths.append(os.path.relpath(p, DATASET_ROOT))
                 all_labels.append(label)
                 indexed_count += 1
             except Exception as e:
@@ -117,7 +117,8 @@ def query_index(query_path, k):
 
     print(f"\nTop-{k} results for: {query_path}\n")
     for rank, (dist, idx) in enumerate(zip(distances[0], indices[0]), start=1):
-        print(f"  [{rank}] dist={dist:.4f}  label={labels[idx]}  path={paths[idx]}")
+        rel_path = paths[idx] if isinstance(paths[idx], str) else paths[idx].decode('utf-8')
+        print(f"  [{rank}] dist={dist:.4f}  label={labels[idx]}  path={rel_path}")
 
 
 def main():

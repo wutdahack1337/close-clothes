@@ -86,7 +86,7 @@ def _query_chog(img: Image.Image, k: int):
             "rank": r + 1,
             "dist": float(distances[0][r]),
             "label": labels_chog[i],
-            "path": os.path.relpath(paths_chog[i], CLOTHES_DATASET_ROOT),
+            "path": paths_chog[i] if isinstance(paths_chog[i], str) else paths_chog[i].decode('utf-8'),
         }
         for r, i in enumerate(indices[0])
     ]
