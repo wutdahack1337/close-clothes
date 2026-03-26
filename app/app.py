@@ -73,7 +73,7 @@ def _query_vgg(img: Image.Image, k: int):
     feat = feat / np.clip(np.linalg.norm(feat), 1e-8, None)
     distances, indices = nn_vgg.kneighbors(feat.reshape(1, -1), n_neighbors=k)
     return [
-        {"rank": r + 1, "dist": float(distances[0][r]), "label": labels_vgg[i], "path": paths_vgg[i]}
+        {"rank": r + 1, "dist": float(distances[0][r]), "label": labels_vgg[i], "path": str(paths_vgg[i])}
         for r, i in enumerate(indices[0])
     ]
 
@@ -82,12 +82,7 @@ def _query_chog(img: Image.Image, k: int):
     feat = chog_mod.extract_features(img)
     distances, indices = nn_chog.kneighbors(feat.reshape(1, -1), n_neighbors=k)
     return [
-        {
-            "rank": r + 1,
-            "dist": float(distances[0][r]),
-            "label": labels_chog[i],
-            "path": paths_chog[i] if isinstance(paths_chog[i], str) else paths_chog[i].decode('utf-8'),
-        }
+        {"rank": r + 1, "dist": float(distances[0][r]), "label": labels_chog[i], "path": str(paths_chog[i])}
         for r, i in enumerate(indices[0])
     ]
 
