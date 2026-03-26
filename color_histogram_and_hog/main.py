@@ -110,7 +110,6 @@ def query_index(query_path, k):
     with Image.open(query_path) as img:
         img = img.convert("RGB")
         feat = extract_features(img)
-    feat = extract_features(img)
 
     nn_model = NearestNeighbors(n_neighbors=k, metric="euclidean", algorithm="brute")
     nn_model.fit(features)
