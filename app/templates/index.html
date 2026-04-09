@@ -99,7 +99,7 @@
               #{{ item.rank }}
             </span>
             <div class="mt-1.5 px-0.5">
-              <p class="text-xs font-medium text-gray-700 truncate">{{ item.label }}</p>
+              <p class="text-xs font-medium text-gray-700 truncate">{{ item.label }} <span class="text-gray-400 font-normal">({{ item.path.split('/')|last }})</span></p>
               <p class="text-xs text-gray-400">d = {{ "%.4f" | format(item.dist) }}</p>
             </div>
           </div>
@@ -128,7 +128,7 @@
               #{{ item.rank }}
             </span>
             <div class="mt-1.5 px-0.5">
-              <p class="text-xs font-medium text-gray-700 truncate">{{ item.label }}</p>
+              <p class="text-xs font-medium text-gray-700 truncate">{{ item.label }} <span class="text-gray-400 font-normal">({{ item.path.split('/')|last }})</span></p>
               <p class="text-xs text-gray-400">d = {{ "%.4f" | format(item.dist) }}</p>
             </div>
           </div>
