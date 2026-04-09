@@ -1,21 +1,16 @@
 # close-clothes
-data mining project
 
-You wanna find k similar clothes to a query image.
+Clothing similarity search using VGG19 and Color Histogram + HOG.
 
-## Requirement
-- clothes_dataset folder: download from kaggle.com/datasets/ryanbadai/clothes-dataset
+## Requirements
+
+- Python 3.12+
+- `clothes_dataset/` — download from [kaggle.com/datasets/ryanbadai/clothes-dataset](https://kaggle.com/datasets/ryanbadai/clothes-dataset)
 
 ## Quick Start
-```
-source run.sh
-browser http://localhost:1337
-```
 
-## Details
-```
+```bash
 python3 -m venv .venv
-
 source .venv/bin/activate
 pip install -r requirements.txt
 
@@ -23,47 +18,40 @@ python3 color_histogram_and_hog/main.py --build
 python3 vgg_net_19/main.py --build
 
 python3 app/app.py
-browser http://localhost:1337
+# Open http://localhost:1337
+```
+
+Or just:
+
+```bash
+source run.sh
+```
+
+## Evaluate Precision@K
+
+```bash
+python scripts/evaluate_precision.py --k 5
 ```
 
 ## Dataset Duplicate Filter
-Detect duplicated images that appear in different labels:
 
 ```bash
-source .venv/bin/activate
-
-# 1) Report only (safe)
+# Report only
 python scripts/find_cross_label_duplicates.py --root clothes_dataset --action report
 
-# 2) Move duplicated files (except 1 keeper per exact-duplicate group)
+# Move duplicates to quarantine
 python scripts/find_cross_label_duplicates.py --root clothes_dataset --action move --quarantine-dir duplicate_quarantine
 
-# 3) Delete duplicated files (dangerous)
+# Delete duplicates
 python scripts/find_cross_label_duplicates.py --root clothes_dataset --action delete --yes
+
+# Delete from a manual list (dry-run first)
+python scripts/find_cross_label_duplicates.py --root clothes_dataset --delete-list need_delete.txt --dry-run
+python scripts/find_cross_label_duplicates.py --root clothes_dataset --delete-list need_delete.txt --yes
 ```
 
-Reports are written to:
-- `duplicate_reports/duplicate_report.json`
-
-Delete images from a manual list file:
+## Tests
 
 ```bash
-# need_delete.txt example:
-# Jaket/075.jpg
-# Jaket/078.jpg
-# Polo/251.jpg
-
-source .venv/bin/activate
-
-# 1) Preview only
-python scripts/find_cross_label_duplicates.py \
-	--root clothes_dataset \
-	--delete-list need_delete.txt \
-	--dry-run
-
-# 2) Delete for real (requires --yes)
-python scripts/find_cross_label_duplicates.py \
-	--root clothes_dataset \
-	--delete-list need_delete.txt \
-	--yes
+python -m pytest tests/ -v
 ```
