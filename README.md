@@ -1,14 +1,10 @@
 # close-clothes
-
 Clothing similarity search using VGG19 and Color Histogram + HOG.
 
 ## Requirements
-
-- Python 3.12+
-- `clothes_dataset/` — download from [kaggle.com/datasets/ryanbadai/clothes-dataset](https://kaggle.com/datasets/ryanbadai/clothes-dataset)
+`clothes_dataset/` — download from [kaggle.com/datasets/ryanbadai/clothes-dataset](https://kaggle.com/datasets/ryanbadai/clothes-dataset)
 
 ## Quick Start
-
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -22,19 +18,16 @@ python3 app/app.py
 ```
 
 Or just:
-
 ```bash
 source run.sh
 ```
 
 ## Evaluate Precision@K
-
 ```bash
 python scripts/evaluate_precision.py --k 5
 ```
 
 ## Dataset Duplicate Filter
-
 ```bash
 # Report only
 python scripts/find_cross_label_duplicates.py --root clothes_dataset --action report
@@ -51,7 +44,6 @@ python scripts/find_cross_label_duplicates.py --root clothes_dataset --delete-li
 ```
 
 ## Tests
-
 ```bash
 python -m pytest tests/ -v
 ```
