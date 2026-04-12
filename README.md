@@ -24,26 +24,26 @@ source run.sh
 
 ## Evaluate Precision@K
 ```bash
-python scripts/evaluate_precision.py --k 5
+python3 scripts/evaluate_precision.py --k 5
 ```
 
 ## Dataset Duplicate Filter
 ```bash
 # Report only
-python scripts/find_cross_label_duplicates.py --root clothes_dataset --action report
+python3 scripts/find_cross_label_duplicates.py --root clothes_dataset --action report
 
 # Move duplicates to quarantine
-python scripts/find_cross_label_duplicates.py --root clothes_dataset --action move --quarantine-dir duplicate_quarantine
+python3 scripts/find_cross_label_duplicates.py --root clothes_dataset --action move --quarantine-dir duplicate_quarantine
 
 # Delete duplicates
-python scripts/find_cross_label_duplicates.py --root clothes_dataset --action delete --yes
+python3 scripts/find_cross_label_duplicates.py --root clothes_dataset --action delete --yes
 
 # Delete from a manual list (dry-run first)
-python scripts/find_cross_label_duplicates.py --root clothes_dataset --delete-list need_delete.txt --dry-run
-python scripts/find_cross_label_duplicates.py --root clothes_dataset --delete-list need_delete.txt --yes
+python3 scripts/find_cross_label_duplicates.py --root clothes_dataset --delete-list need_delete.txt --dry-run
+python3 scripts/find_cross_label_duplicates.py --root clothes_dataset --delete-list need_delete.txt --yes
 ```
 
 ## Tests
 ```bash
-python -m pytest tests/ -v
+python3 -m pytest tests/ -v
 ```
